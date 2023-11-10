@@ -46,6 +46,18 @@ body {
 /*  Main                                                 */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1:hover, 
+h2:hover {
+    cursor: default;
+}
+
+/* GRID */
+
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,11 +66,15 @@ body {
     gap: 0.4rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
-    background: var(--bg-white);
+    background: var(--bg-brown);
 }
 
 .grid__square {
-    background: var(--bg-brown);
+    background: var(--bg-white);
     border-radius: 0.3rem;
     border: var(--border);
+}
+
+.grid__square:hover {
+    cursor: pointer;
 }
