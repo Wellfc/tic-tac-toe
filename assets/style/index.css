@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Nunito Sans', Arial, sans-serif;
+}
+ 
+body {
+ background-color: #2323f0;
+}
+ 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 400px;
+    width: 400px;
+    gap: 0.4rem;
+}
